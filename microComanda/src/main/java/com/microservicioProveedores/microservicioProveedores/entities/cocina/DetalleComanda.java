@@ -2,7 +2,6 @@
 	import javax.persistence.Column;
 	import javax.persistence.Entity;
 	import javax.persistence.Table;
-	import org.hibernate.envers.Audited;
 	import lombok.AllArgsConstructor;
 	import lombok.Builder;
 	import lombok.Data;
@@ -16,8 +15,7 @@
 	@AllArgsConstructor
 	@NoArgsConstructor
 	@Builder
-	
-	@Audited
+
 	public class DetalleComanda 	extends Base
 	  {
 	@Column(name = "aclaracion")
