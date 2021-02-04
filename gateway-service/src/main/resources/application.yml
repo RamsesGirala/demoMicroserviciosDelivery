@@ -13,3 +13,13 @@ spring:
       discovery:
         locator:
           enabled: true
+          lowerCaseServiceId: true
+      routes:
+        - id: microProveedores
+          uri: lb://microProveedores
+          predicates:
+            - Path=/api/v1/proveedor/**, /api/v1/existencia/**, /api/v1/unidad/**
+        - id: microStock
+          uri: lb://microStock
+          predicates:
+            - Path=/api/v1/insumo/**, /api/v1/manufacturado/**, /api/v1/rubro/**

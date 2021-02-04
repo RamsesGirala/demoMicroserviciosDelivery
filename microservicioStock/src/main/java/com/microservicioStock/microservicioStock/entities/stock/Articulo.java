@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.microservicioStock.microservicioStock.models.Existencia;
 import lombok.Builder.Default;
 
 import org.hibernate.envers.Audited;
@@ -35,11 +36,8 @@ public abstract class Articulo extends Base {
     protected int stockMax;
     @Column(name = "stockMin")
     protected int stockMin;
-
-
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-
     private List<HistoricoPrecios> precio = new ArrayList<HistoricoPrecios>();
-
-
+    @OneToMany(cascade=CascadeType.ALL, orphanRemoval=true)
+    private List<Articulos_Existencia> articulos_existencias= new ArrayList<>();
 }
