@@ -11,4 +11,5 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "*")
 @RequestMapping(path = "microPedido/pedidos")
 public class PedidoController extends BaseController<Pedido, PedidoServiceImpl>{
+
 }
