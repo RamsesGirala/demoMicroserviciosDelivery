@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping(path = "comandas")
+@RequestMapping(path = "microComanda/comandas")
 public class ComandaController extends BaseController<Comanda, ComandaServiceImpl>{
 
 

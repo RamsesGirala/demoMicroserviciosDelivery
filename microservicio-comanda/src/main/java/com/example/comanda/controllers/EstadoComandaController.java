@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping(path = "estados")
+@RequestMapping(path = "microComanda/estados")
 public class EstadoComandaController extends BaseController<EstadoComanda, EstadoComandaServiceImpl>{
 }

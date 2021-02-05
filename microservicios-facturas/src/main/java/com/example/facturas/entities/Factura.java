@@ -1,5 +1,6 @@
 package com.example.facturas.entities;
 
+import com.example.facturas.model.Pedido;
 import lombok.*;
 
 import javax.persistence.*;
@@ -27,6 +28,13 @@ public class Factura extends Base{
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     private List<HistoricoEstadoFactura> estadoFactura = new ArrayList<HistoricoEstadoFactura>();
+
+    @Column(name = "id_pedido")
+    private Long idPedido;
+
+    @Transient
+    private Pedido pedido;
+
 
     @PrePersist
     public void prePersist(){

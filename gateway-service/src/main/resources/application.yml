@@ -23,3 +23,15 @@ spring:
           uri: lb://microStock
           predicates:
             - Path=/api/v1/insumo/**, /api/v1/manufacturado/**, /api/v1/rubro/**
+        - id: comanda-service
+          uri: lb://comanda-service
+          predicates:
+            - Path=/microComanda/estados/**, /microComanda/comandas/**
+        - id: microservicios-facturas
+          uri: lb://microservicios-facturas
+          predicates:
+            - Path=/microFactura/estados/**, /microFactura/facturas/**
+        - id: microservicio-pedidos
+          uri: lb://microservicio-pedidos
+          predicates:
+            - Path=/microPedido/pedidos/**, /microPedido/pagos/**, /microPedido/estados/**
