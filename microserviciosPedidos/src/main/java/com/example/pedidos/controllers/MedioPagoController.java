@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping(path = "pagos")
+@RequestMapping(path = "microPedido/pagos")
 public class MedioPagoController extends BaseController<MedioPago, MedioPagoServiceImpl>{
 
 }
