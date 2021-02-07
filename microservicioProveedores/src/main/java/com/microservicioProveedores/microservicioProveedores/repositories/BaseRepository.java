@@ -1,6 +1,6 @@
 package com.microservicioProveedores.microservicioProveedores.repositories;
 
-import com.microservicioProveedores.microservicioProveedores.entities.Base;
+import com.microservicioProveedores.microservicioProveedores.local_models.Base;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.NoRepositoryBean;
 

@@ -1,7 +1,7 @@
 package com.microservicioStock.microservicioStock.clients;
 
-import com.microservicioStock.microservicioStock.models.Existencia;
-import com.microservicioStock.microservicioStock.models.Proveedor;
+import com.microservicioStock.microservicioStock.remote_models.Existencia;
+import com.microservicioStock.microservicioStock.remote_models.Proveedor;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

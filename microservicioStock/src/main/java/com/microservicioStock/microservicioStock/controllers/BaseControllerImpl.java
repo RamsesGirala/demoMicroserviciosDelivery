@@ -1,6 +1,6 @@
 package com.microservicioStock.microservicioStock.controllers;
 
-import com.microservicioStock.microservicioStock.entities.Base;
+import com.microservicioStock.microservicioStock.local_models.Base;
 import com.microservicioStock.microservicioStock.services.BaseServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;

@@ -2,7 +2,7 @@ package com.microservicioProveedores.microservicioProveedores.config;
 
 import org.hibernate.envers.RevisionListener;
 
-import com.microservicioProveedores.microservicioProveedores.entities.audit.Revision;
+import com.microservicioProveedores.microservicioProveedores.local_models.audit.Revision;
 
 public class CustomRevisionListener implements RevisionListener{
 

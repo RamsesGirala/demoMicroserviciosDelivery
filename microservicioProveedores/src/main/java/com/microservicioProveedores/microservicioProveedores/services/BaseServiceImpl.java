@@ -1,6 +1,6 @@
 package com.microservicioProveedores.microservicioProveedores.services;
 
-import com.microservicioProveedores.microservicioProveedores.entities.Base;
+import com.microservicioProveedores.microservicioProveedores.local_models.Base;
 import com.microservicioProveedores.microservicioProveedores.repositories.BaseRepository;
 
 import org.springframework.data.domain.Page;

@@ -1,6 +1,6 @@
 package com.microservicioStock.microservicioStock.services;
 
-import com.microservicioStock.microservicioStock.entities.Base;
+import com.microservicioStock.microservicioStock.local_models.Base;
 import com.microservicioStock.microservicioStock.repositories.BaseRepository;
 
 import org.springframework.data.domain.Page;

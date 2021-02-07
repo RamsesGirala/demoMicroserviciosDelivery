@@ -1,7 +1,7 @@
 package com.example.comanda.repositories;
 
 
-import com.example.comanda.entities.Base;
+import com.example.comanda.local_models.Base;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.NoRepositoryBean;
 

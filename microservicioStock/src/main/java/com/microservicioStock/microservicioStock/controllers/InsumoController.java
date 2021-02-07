@@ -2,13 +2,12 @@ package com.microservicioStock.microservicioStock.controllers;
 
 import com.google.gson.Gson;
 import com.microservicioStock.microservicioStock.clients.ProveedorClientRest;
-import com.microservicioStock.microservicioStock.entities.stock.Articulos_Existencia;
-import com.microservicioStock.microservicioStock.entities.stock.Insumo;
-import com.microservicioStock.microservicioStock.models.Existencia;
-import com.microservicioStock.microservicioStock.models.Proveedor;
+import com.microservicioStock.microservicioStock.local_models.stock.Articulos_Existencia;
+import com.microservicioStock.microservicioStock.local_models.stock.Insumo;
+import com.microservicioStock.microservicioStock.remote_models.Existencia;
+import com.microservicioStock.microservicioStock.remote_models.Proveedor;
 import com.microservicioStock.microservicioStock.services.InsumoServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.gson.GsonBuilderCustomizer;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -94,10 +93,8 @@ public class InsumoController extends BaseControllerImpl<Insumo, InsumoServiceIm
         try {
 
             if (entity.getIdDistribProv() == 0) {
-
                 Proveedor prov = gson.fromJson(provClient.saveProveedor(entity.getProveedor()).getBody().toString(), Proveedor.class);
                 entity.setIdDistribProv(prov.getId());
-
             } else provClient.updateProveedor(entity.getIdDistribProv(), entity.getProveedor());
 
 

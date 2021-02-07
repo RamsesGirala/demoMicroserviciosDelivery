@@ -1,6 +1,6 @@
 package com.microservicioStock.microservicioStock.controllers;
 
-import com.microservicioStock.microservicioStock.entities.Base;
+import com.microservicioStock.microservicioStock.local_models.Base;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;

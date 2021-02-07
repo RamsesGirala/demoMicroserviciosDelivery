@@ -1,6 +1,6 @@
 package com.microservicioStock.microservicioStock.controllers;
 
-import com.microservicioStock.microservicioStock.entities.stock.Manufacturado;
+import com.microservicioStock.microservicioStock.local_models.stock.Manufacturado;
 import com.microservicioStock.microservicioStock.services.ManufacturadoServiceImpl;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.CrossOrigin;

@@ -1,6 +1,6 @@
 package com.microservicioProveedores.microservicioProveedores.controllers;
 
-import com.microservicioProveedores.microservicioProveedores.entities.Base;
+import com.microservicioProveedores.microservicioProveedores.local_models.Base;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -1,6 +1,6 @@
 package com.microservicioProveedores.microservicioProveedores.services;
 
-import com.microservicioProveedores.microservicioProveedores.entities.proveedores.Proveedor;
+import com.microservicioProveedores.microservicioProveedores.local_models.proveedores.Proveedor;
 import com.microservicioProveedores.microservicioProveedores.repositories.BaseRepository;
 import com.microservicioProveedores.microservicioProveedores.repositories.ProveedorRepository;
 import org.springframework.beans.factory.annotation.Autowired;

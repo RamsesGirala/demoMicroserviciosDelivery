@@ -1,5 +1,5 @@
 package com.microservicioProveedores.microservicioProveedores.repositories;
-import com.microservicioProveedores.microservicioProveedores.entities.proveedores.Proveedor;
+import com.microservicioProveedores.microservicioProveedores.local_models.proveedores.Proveedor;
 import org.springframework.stereotype.Repository;
 
 @Repository

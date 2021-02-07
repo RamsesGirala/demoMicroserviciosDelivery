@@ -1,6 +1,6 @@
 package com.example.comanda.services;
 
-import com.example.comanda.entities.EstadoComanda;
+import com.example.comanda.local_models.EstadoComanda;
 import com.example.comanda.repositories.BaseRepository;
 import com.example.comanda.repositories.EstadoComandaRepository;
 import org.springframework.beans.factory.annotation.Autowired;

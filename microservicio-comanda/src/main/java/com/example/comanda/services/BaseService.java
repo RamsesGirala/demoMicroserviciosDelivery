@@ -1,7 +1,7 @@
 package com.example.comanda.services;
 
 
-import com.example.comanda.entities.Base;
+import com.example.comanda.local_models.Base;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

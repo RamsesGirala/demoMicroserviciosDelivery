@@ -1,6 +1,6 @@
 package com.example.comanda.controllers;
 
-import com.example.comanda.entities.Base;
+import com.example.comanda.local_models.Base;
 import com.example.comanda.services.BaseServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
