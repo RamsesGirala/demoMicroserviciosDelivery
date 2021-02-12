@@ -12,5 +12,4 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(path = "microComanda/comandas")
 public class ComandaController extends BaseController<Comanda, ComandaServiceImpl>{
 
-
 }

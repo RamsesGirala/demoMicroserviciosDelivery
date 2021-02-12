@@ -18,11 +18,12 @@ spring:
         - id: microProveedores
           uri: lb://microProveedores
           predicates:
-            - Path=/api/v1/proveedor/**, /api/v1/existencia/**, /api/v1/unidad/**
+            - Path=/microProveedores/**
         - id: microStock
           uri: lb://microStock
           predicates:
-            - Path=/api/v1/insumo/**, /api/v1/manufacturado/**, /api/v1/rubro/**
+#            - Path=/api/v1/insumo/**, /api/v1/manufacturado/**, /api/v1/rubro/**
+            - Path=/microStock/**
         - id: comanda-service
           uri: lb://comanda-service
           predicates:
@@ -30,8 +31,8 @@ spring:
         - id: microservicios-facturas
           uri: lb://microservicios-facturas
           predicates:
-            - Path=/microFactura/estados/**, /microFactura/facturas/**
+            - Path=/microFactura/**
         - id: microservicio-pedidos
           uri: lb://microservicio-pedidos
           predicates:
-            - Path=/microPedido/pedidos/**, /microPedido/pagos/**, /microPedido/estados/**
+            - Path=/microPedido/**

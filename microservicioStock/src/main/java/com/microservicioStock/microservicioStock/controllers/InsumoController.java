@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping(path = "api/v1/insumo")
+@RequestMapping(path = "microStock/api/v1/insumo")
 public class InsumoController extends BaseControllerImpl<Insumo, InsumoServiceImpl> {
 
     @Autowired
@@ -127,6 +127,23 @@ public class InsumoController extends BaseControllerImpl<Insumo, InsumoServiceIm
             }
             return ResponseEntity.status(HttpStatus.OK).body(service.update(id, entity));
         } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("{\"error\":\"Error\"}");
+        }
+    }
+
+    @DeleteMapping("/subordinada/{id}")
+    public ResponseEntity<?> delete(@PathVariable Long id) {
+        try{
+
+            Insumo i = service.findById(id);
+
+            provClient.deleteProveedor(i.getIdDistribProv());
+
+            for(Articulos_Existencia a : i.getArticulos_existencias())
+                provClient.deleteExistencia(a.getId_existencia());
+
+            return ResponseEntity.status(HttpStatus.OK).body(service.delete(id));
+        }catch (Exception e){
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("{\"error\":\"Error\"}");
         }
     }

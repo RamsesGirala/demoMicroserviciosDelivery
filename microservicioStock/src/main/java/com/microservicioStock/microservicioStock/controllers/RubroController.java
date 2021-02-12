@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping(path = "api/v1/rubro")
+@RequestMapping(path = "microStock/api/v1/rubro")
 public class RubroController extends BaseControllerImpl<Rubro, RubroServiceImpl>{
 
 

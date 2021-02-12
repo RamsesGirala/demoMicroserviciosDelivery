@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping(path = "api/v1/proveedor")
+@RequestMapping(path = "microProveedores/api/v1/proveedor")
 public class ProveedorController extends BaseControllerImpl<Proveedor, ProveedorServiceImpl>{
 
 }

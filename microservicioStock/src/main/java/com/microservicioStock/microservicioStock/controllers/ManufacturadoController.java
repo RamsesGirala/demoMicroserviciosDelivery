@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping(path = "api/v1/manufacturado")
+@RequestMapping(path = "microStock/api/v1/manufacturado")
 public class ManufacturadoController extends BaseControllerImpl<Manufacturado, ManufacturadoServiceImpl>{
 
 

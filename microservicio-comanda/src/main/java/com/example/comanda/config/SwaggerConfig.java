@@ -1,4 +1,4 @@
-package com.microservicioStock.microservicioStock.config;
+package com.example.comanda.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,7 +12,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerConfig {
 /*
-http://localhost:8080/swagger-ui.html
+http://localhost:46739/swagger-ui.html
 http://localhost:41809/v2/api-docs
  */
     @Bean
@@ -20,7 +20,7 @@ http://localhost:41809/v2/api-docs
 
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.microservicioStock.microservicioStock.controllers"))
+                .apis(RequestHandlerSelectors.basePackage("com.example.comanda.controllers"))
                 .paths(PathSelectors.any())
                 .build();
     }

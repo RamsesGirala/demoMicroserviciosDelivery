@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping(path = "api/v1/existencia")
+@RequestMapping(path = "microProveedores/api/v1/existencia")
 public class ExistenciaController extends BaseControllerImpl<Existencia, ExistenciaServiceImpl>{
 
 

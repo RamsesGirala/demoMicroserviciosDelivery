@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient(name = "microStock", url= "localhost:8080")
 public interface StockClientRest {
 
-    @GetMapping("/api/v1/insumo/{id}")
+    @GetMapping("microStock/api/v1/insumo/{id}")
     public ResponseEntity<?> getOne(@PathVariable Long id);
 
 }
