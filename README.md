@@ -1,9 +1,14 @@
 # demoMicroserviciosDelivery
+Gateway service corriendo en puerto 8080
+Discovery service corriendo en puerto 8761
 
-stock: maven, properties, mySQL
-proveedores: maven, yml, mySQL	
-comanda: maven, yml, h2	
-pedidos: graddle, properties, mySQL
-facturas: gradle, yml, mySQL
-discovery: eureka
-gateway: spring cloud, yml
+
+Caracteristicas de los microservicios funcionales:
+
+Stock: maven, properties, mySQL
+Proveedores: maven, yml, mySQL	
+Comanda: maven, yml, h2	
+Pedidos: graddle, properties, mySQL
+Facturas: gradle, yml, mySQL
+Discovery: eureka
+Gateway: spring cloud, yml
