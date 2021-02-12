@@ -2,7 +2,7 @@ package com.example.facturas.controllers;
 
 import com.example.facturas.clients.PedidoClientRest;
 import com.example.facturas.entities.Factura;
-import com.example.facturas.local_models.Pedido;
+import com.example.facturas.model.Pedido;
 import com.example.facturas.services.FacturaServiceImpl;
 import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;

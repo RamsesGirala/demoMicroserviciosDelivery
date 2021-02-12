@@ -1,4 +1,4 @@
-package com.example.facturas.local_models;
+package com.example.facturas.model;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;

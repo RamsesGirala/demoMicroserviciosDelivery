@@ -1,6 +1,6 @@
 package com.example.facturas.entities;
 
-import com.example.facturas.local_models.Pedido;
+import com.example.facturas.model.Pedido;
 import lombok.*;
 
 import javax.persistence.*;
